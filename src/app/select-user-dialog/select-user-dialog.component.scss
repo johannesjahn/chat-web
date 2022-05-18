@@ -1,0 +1,22 @@
+div.container {
+  overflow: scroll;
+}
+
+div.userContainer {
+  padding: 10px;
+  border-color: lightgray;
+  border-radius: 10px;
+  border: solid 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  p {
+    height: 20px;
+    margin: auto;
+  }
+}
+
+div.userContainer:not(:last-child) {
+  margin-bottom: 10px;
+}

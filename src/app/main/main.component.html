@@ -1,0 +1,19 @@
+<mat-toolbar>
+  <span>Hello</span>
+  <span class="spacer"></span>
+  <button class="logoutButton" mat-icon-button (click)="logout()">
+    <mat-icon>logout</mat-icon>
+  </button>
+
+</mat-toolbar>
+
+<button class="addButton" mat-fab (click)="addConversation()">
+  <mat-icon>add</mat-icon>
+</button>
+
+
+<div class="conversationContainer">
+  <div *ngFor="let conversation of conversations">
+    <mat-card (click)="navigateToChat(conversation)">{{getChatTitle(conversation)}}</mat-card>
+  </div>
+</div>

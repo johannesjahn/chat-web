@@ -1,0 +1,32 @@
+<mat-toolbar>
+  <button class="backButton" mat-icon-button (click)="back()">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  <p>
+    {{title}}
+  </p>
+
+</mat-toolbar>
+
+<div class="messagesContainer" #messagesContainer>
+  <div *ngFor="let message of conversation?.messages" class="messageContainer">
+    <div [ngClass]="(message.author.id == ownUser?.id ? 'own' : 'nown')">
+      <p class="messageAuthor">
+        {{message.author.username}}
+      </p>
+      <p class="messageContent">
+        {{message.content}}
+      </p>
+      <p class="messageCreatedAt">
+        {{message.createdAt | date }}
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="inputFooter">
+  <input [(ngModel)]="input" type="email">
+  <button mat-icon-button (click)="send()">
+    <mat-icon>send</mat-icon>
+  </button>
+</div>

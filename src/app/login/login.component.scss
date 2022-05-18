@@ -1,0 +1,26 @@
+div.container {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  form.login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  div.login-buttons {
+    button {
+      margin: 10px;
+    }
+  }
+  div.stuff-section {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<mat-dialog-content class="container">
+  <div *ngFor="let user of users" class="userContainer" (click)="selectUser(user)">
+    <p>{{user.username}}</p>
+    <mat-icon>add</mat-icon>
+  </div>
+</mat-dialog-content>

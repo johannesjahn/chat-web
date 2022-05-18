@@ -1,0 +1,22 @@
+<div class="container">
+  <form class="login-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Username</mat-label>
+        <input type="text" matInput name="username" [(ngModel)]="username">
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Password</mat-label>
+        <input type="password" matInput name="password" [(ngModel)]="password">
+    </mat-form-field>
+  </form>
+  <div class="login-buttons">
+    <button mat-raised-button (click)="register()">Register</button>
+    <button mat-raised-button (click)="login()">Login</button>
+  </div>
+  <div class="stuff-section">
+    <button mat-raised-button (click)="getStuff()">Get Stuff</button>
+    <div *ngIf="stuff">
+      {{ stuff }}
+    </div>
+  </div>
+</div>

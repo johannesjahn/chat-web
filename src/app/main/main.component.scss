@@ -1,0 +1,12 @@
+mat-toolbar {
+  span.spacer {
+    flex: 1 1 auto;
+  }
+}
+
+.addButton {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1;
+}

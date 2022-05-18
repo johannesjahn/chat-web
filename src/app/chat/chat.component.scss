@@ -1,0 +1,59 @@
+mat-toolbar {
+  position: fixed;
+  top: 0px;
+  p {
+    margin: auto 0;
+  }
+}
+
+div.inputFooter {
+  position: fixed;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  input {
+    flex: 1;
+  }
+  button {
+    text-align: center;
+  }
+}
+
+div.messagesContainer {
+  overflow: scroll;
+  padding-bottom: 50px;
+  margin-top: 70px;
+}
+
+div.messageContainer {
+  width: 100%;
+  display: flex;
+
+  p.messageAuthor {
+    font-style: italic;
+  }
+  p.messageCreatedAt {
+    text-align: end;
+  }
+}
+
+div.own {
+  width: 70%;
+  background: lightgray;
+  border-radius: 10px;
+  padding:10px;
+  margin: 5px;
+  margin-left: 30%;
+}
+
+div.nown {
+  width: 70%;
+  background: gray;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  align-self: flex-end;
+}
